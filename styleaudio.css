@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;800&display=swap');
+@import "https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css";
+body{
+    height: 100vh;
+    background-image: url("https://i.pinimg.com/736x/e2/a7/24/e2a7244c86e7fe18e9b3fe417ae7ec65.jpg");
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fira Sans', sans-serif;
+
+}
+body * {
+    box-sizing: border-box;
+}
+#player  {
+    background-color: white;
+    width: 90%;
+    margin-right: 15px;
+    max-width: 375px;
+    border-radius: 15px;
+    
+}
+#player2{
+    background-color: white;
+    width: 90%;
+    max-width: 375px;
+     border-radius: 15px;
+}
+.card{
+    box-shadow: none;
+    margin: 25px;
+}
+h4{
+    color: purple;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+.image1{
+    height: 100%;
+    width: 100%;
+    box-shadow: 2px 2px 15px 0px black;
+}
+audio{
+    margin-top: 10px;
+    margin-block-end: 10px;
+    width: 100%;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-content >h5{
+    color:black;
+    font-weight: bold;
+}
+.card-content > p{
+    color:gray;
+    font-weight: inherit;
+    opacity: 50%;
+ 
+    
+}
+@media only screen and (max-width: 950px){
+    #player{
+        width: 85%;
+    }
+    #player2{
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 600px){
+    body{ 
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;}
+    #player{
+        width:80%;
+        height: auto;
+    }
+    #player2{
+        margin-top: 35px;
+        width:80%;
+        height: auto;
+        
+    }
+
+}

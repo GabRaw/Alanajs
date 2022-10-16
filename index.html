@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class = "main-login">
+        <div class = "left-login">
+            <h1>Faça Login! <br> esse será seu site preferido em breve!</h1>
+            <img src="amor.svg" class="imagem1" alt="cassal animação">
+            <audio src="1af.mp3"  autoplay></audio>
+        </div>
+        <div class = "right-login">
+            <div class = "card-login">
+                <h1>LOGIN</h1>
+                <div class = "textfield">
+                    <label id = "label">Email</label>
+                    <input type = 'text' name = "email"  id="email" placeholder="Email">
+                <div class = "textfield">
+                    <label id = "senha">Senha</label>
+                    <input type = 'password' id = "password" name = "password" placeholder="Senha">
+                <button id="login-button" onclick="login()" class="btn-login" >Login</button>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js"></script>
+    <script>
+    const firebaseConfig = {
+    apiKey: "AIzaSyDTKxRDwnrnSsPuTFOF0Wg1WH0R6pq8FaE",
+    authDomain: "alanajs-12126.firebaseapp.com",
+    projectId: "alanajs-12126",
+    storageBucket: "alanajs-12126.appspot.com",
+    messagingSenderId: "319776316717",
+    appId: "1:319776316717:web:5f3f9a8da878160dbe87a4"
+  };
+  firebase.initializeApp(firebaseConfig);
+    </script>
+</body>
+</html>
