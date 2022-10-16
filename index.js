@@ -8,7 +8,7 @@ function login(){
     firebase.auth().signInWithEmailAndPassword(
         form.email().value, form.password().value
         ).then(response =>{
-        window.location.href = "pages/paudios.html";
+        window.location.href = "paudios.html";
    }).catch(error => {
     alert(getErrorMessage(error));
     console.log(error, error)
